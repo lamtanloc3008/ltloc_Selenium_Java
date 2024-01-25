@@ -1,0 +1,9 @@
+version: "3"
+services:
+  firefox_video:
+    image: selenium/video:ffmpeg-6.0-20231110
+    volumes:
+      - /home/lvuhoang/Documents/Video_Selenium_Grid:/videos
+    environment:
+      - DISPLAY_CONTAINER_NAME=firefox
+      - FILE_NAME=firefox_video.mp4
