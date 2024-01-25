@@ -1,0 +1,9 @@
+version: "3"
+services:
+  edge_video:
+    image: selenium/video:ffmpeg-6.0-20231110
+    volumes:
+      - /home/lvuhoang/Documents/Video_Selenium_Grid:/videos
+    environment:
+      - DISPLAY_CONTAINER_NAME=edge
+      - FILE_NAME=edge_video.mp4
